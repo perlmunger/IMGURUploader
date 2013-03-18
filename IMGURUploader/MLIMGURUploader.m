@@ -65,7 +65,7 @@
   }
   
   // Description parameter
-  if (title) {
+  if (description) {
     [requestBody appendData:[[NSString stringWithFormat:@"--%@\r\n", boundary] dataUsingEncoding:NSUTF8StringEncoding]];
     [requestBody appendData:[[NSString stringWithFormat:@"Content-Disposition: form-data; name=\"description\"\r\n\r\n"] dataUsingEncoding:NSUTF8StringEncoding]];
     [requestBody appendData:[description dataUsingEncoding:NSUTF8StringEncoding]];
