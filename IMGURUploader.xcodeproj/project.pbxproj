@@ -93,9 +93,9 @@
 				B3B590DB16F6A01D00CF239D /* MainStoryboard.storyboard */,
 				B3B590DE16F6A01D00CF239D /* MLViewController.h */,
 				B3B590DF16F6A01D00CF239D /* MLViewController.m */,
-				B3B590CA16F6A01D00CF239D /* Supporting Files */,
 				B3B590E816F6A12900CF239D /* MLIMGURUploader.h */,
 				B3B590E916F6A12900CF239D /* MLIMGURUploader.m */,
+				B3B590CA16F6A01D00CF239D /* Supporting Files */,
 			);
 			path = IMGURUploader;
 			sourceTree = "<group>";
@@ -276,6 +276,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IMGURUploader/IMGURUploader-Prefix.pch";
 				INFOPLIST_FILE = "IMGURUploader/IMGURUploader-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -287,6 +288,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IMGURUploader/IMGURUploader-Prefix.pch";
 				INFOPLIST_FILE = "IMGURUploader/IMGURUploader-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
