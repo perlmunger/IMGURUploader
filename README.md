@@ -126,7 +126,7 @@ This code uses no third party libraries, however, it does require ARC and iOS5 o
 
 RESULTS
 -------------------------------------
-When the request to the imgur service returns, you will have a link to the raw image you uploaded. If you want to view that image with the title and description you provided, simply remove the file extension. So, for example, this link returns the raw image: http://i.imgur.com/bQzUcIp.jpg, but this link http://i.imgur.com/bQzUcIp displays the imgur website chrome and all of the meta your provided in the upload call.
+When the request to the imgur service returns, you will have a link to the raw image you uploaded. If you want to view that image with the title and description you provided, simply remove the file extension. So, for example, this link returns the raw image: http://i.imgur.com/bQzUcIp.jpg, but this link http://i.imgur.com/bQzUcIp displays the imgur website chrome and all of the meta you provided in the upload call.
 
 LICENSE
 -------------------------------------
