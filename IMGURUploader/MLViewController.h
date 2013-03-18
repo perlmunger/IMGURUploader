@@ -10,4 +10,10 @@
 
 @interface MLViewController : UIViewController
 
+@property (nonatomic, weak) IBOutlet UITextField *titleTextField;
+@property (nonatomic, weak) IBOutlet UITextField *descriptionTextField;
+@property (nonatomic, weak) IBOutlet UITextView *linkTextView;
+
+- (IBAction)didTapUploadButton:(id)sender;
+
 @end

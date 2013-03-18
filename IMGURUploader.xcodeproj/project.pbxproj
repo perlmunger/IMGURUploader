@@ -18,6 +18,8 @@
 		B3B590DA16F6A01D00CF239D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3B590D916F6A01D00CF239D /* Default-568h@2x.png */; };
 		B3B590DD16F6A01D00CF239D /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3B590DB16F6A01D00CF239D /* MainStoryboard.storyboard */; };
 		B3B590E016F6A01D00CF239D /* MLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B590DF16F6A01D00CF239D /* MLViewController.m */; };
+		B3B590E716F6A03E00CF239D /* balloons.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3B590E616F6A03E00CF239D /* balloons.jpg */; };
+		B3B590EA16F6A12900CF239D /* MLIMGURUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B590E916F6A12900CF239D /* MLIMGURUploader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,9 @@
 		B3B590DC16F6A01D00CF239D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		B3B590DE16F6A01D00CF239D /* MLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLViewController.h; sourceTree = "<group>"; };
 		B3B590DF16F6A01D00CF239D /* MLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLViewController.m; sourceTree = "<group>"; };
+		B3B590E616F6A03E00CF239D /* balloons.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = balloons.jpg; sourceTree = "<group>"; };
+		B3B590E816F6A12900CF239D /* MLIMGURUploader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLIMGURUploader.h; sourceTree = "<group>"; };
+		B3B590E916F6A12900CF239D /* MLIMGURUploader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLIMGURUploader.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +94,8 @@
 				B3B590DE16F6A01D00CF239D /* MLViewController.h */,
 				B3B590DF16F6A01D00CF239D /* MLViewController.m */,
 				B3B590CA16F6A01D00CF239D /* Supporting Files */,
+				B3B590E816F6A12900CF239D /* MLIMGURUploader.h */,
+				B3B590E916F6A12900CF239D /* MLIMGURUploader.m */,
 			);
 			path = IMGURUploader;
 			sourceTree = "<group>";
@@ -96,6 +103,7 @@
 		B3B590CA16F6A01D00CF239D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B3B590E616F6A03E00CF239D /* balloons.jpg */,
 				B3B590CB16F6A01D00CF239D /* IMGURUploader-Info.plist */,
 				B3B590CC16F6A01D00CF239D /* InfoPlist.strings */,
 				B3B590CF16F6A01D00CF239D /* main.m */,
@@ -164,6 +172,7 @@
 				B3B590D816F6A01D00CF239D /* Default@2x.png in Resources */,
 				B3B590DA16F6A01D00CF239D /* Default-568h@2x.png in Resources */,
 				B3B590DD16F6A01D00CF239D /* MainStoryboard.storyboard in Resources */,
+				B3B590E716F6A03E00CF239D /* balloons.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +186,7 @@
 				B3B590D016F6A01D00CF239D /* main.m in Sources */,
 				B3B590D416F6A01D00CF239D /* MLAppDelegate.m in Sources */,
 				B3B590E016F6A01D00CF239D /* MLViewController.m in Sources */,
+				B3B590EA16F6A12900CF239D /* MLIMGURUploader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
