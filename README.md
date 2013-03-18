@@ -3,7 +3,7 @@ IMGUR Uploader
 
 This project demonstrates how to upload an image to IMGUR anonymously using the v3 API. The endpoint for this service is: https://api.imgur.com/3/upload.json. 
 
-IMPORTANT
+OVERVIEW
 -----------------------------------
 You will need to register your app with imgur here: https://api.imgur.com/oauth2/addclient. A client ID will be generated and sent to your email. You will then plug that into the code in this project.
 
@@ -133,11 +133,11 @@ This code uses no third party libraries, however, it does require ARC and iOS5 o
 }
 ```
 
-Results
+RESULTS
 -------------------------------------
 When the request to the imgur service returns, you will have a link to the raw image you uploaded. If you want to view that image with the title and description you provided, simply remove the file extension. So, for example, this link returns the raw image: http://i.imgur.com/bQzUcIp.jpg, but this link http://i.imgur.com/bQzUcIp displays the imgur website chrome and all of the meta your provided in the upload call.
 
-License
+LICENSE
 -------------------------------------
 The code is MIT licensed. Have fun with it. Submit pull requests if you add something helpful or interesting.
 
