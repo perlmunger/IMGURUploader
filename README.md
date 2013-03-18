@@ -44,7 +44,8 @@ Here is how you use the code. To initiate an upload from a button tap, you would
     }];
     
   });
-}```
+}
+```
 
 This code uses no third party libraries, however, it does require ARC and iOS5 or later due to the use of NSURLConnection's [sendAsynchronousRequest:queue:completionHandler:](https://developer.apple.com/library/mac/#documentation/Cocoa/Reference/Foundation/Classes/NSURLConnection_Class/Reference/Reference.html#//apple_ref/occ/clm/NSURLConnection/sendAsynchronousRequest:queue:completionHandler:). The entire uploader functionality is in a single method. It looks like this:
 
