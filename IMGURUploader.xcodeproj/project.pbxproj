@@ -1,0 +1,308 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B3B590C416F6A01D00CF239D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3B590C316F6A01D00CF239D /* UIKit.framework */; };
+		B3B590C616F6A01D00CF239D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3B590C516F6A01D00CF239D /* Foundation.framework */; };
+		B3B590C816F6A01D00CF239D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3B590C716F6A01D00CF239D /* CoreGraphics.framework */; };
+		B3B590CE16F6A01D00CF239D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B3B590CC16F6A01D00CF239D /* InfoPlist.strings */; };
+		B3B590D016F6A01D00CF239D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B590CF16F6A01D00CF239D /* main.m */; };
+		B3B590D416F6A01D00CF239D /* MLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B590D316F6A01D00CF239D /* MLAppDelegate.m */; };
+		B3B590D616F6A01D00CF239D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B3B590D516F6A01D00CF239D /* Default.png */; };
+		B3B590D816F6A01D00CF239D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3B590D716F6A01D00CF239D /* Default@2x.png */; };
+		B3B590DA16F6A01D00CF239D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3B590D916F6A01D00CF239D /* Default-568h@2x.png */; };
+		B3B590DD16F6A01D00CF239D /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3B590DB16F6A01D00CF239D /* MainStoryboard.storyboard */; };
+		B3B590E016F6A01D00CF239D /* MLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B590DF16F6A01D00CF239D /* MLViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B3B590C016F6A01D00CF239D /* IMGURUploader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IMGURUploader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3B590C316F6A01D00CF239D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B3B590C516F6A01D00CF239D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B3B590C716F6A01D00CF239D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B3B590CB16F6A01D00CF239D /* IMGURUploader-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IMGURUploader-Info.plist"; sourceTree = "<group>"; };
+		B3B590CD16F6A01D00CF239D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B3B590CF16F6A01D00CF239D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B3B590D116F6A01D00CF239D /* IMGURUploader-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IMGURUploader-Prefix.pch"; sourceTree = "<group>"; };
+		B3B590D216F6A01D00CF239D /* MLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLAppDelegate.h; sourceTree = "<group>"; };
+		B3B590D316F6A01D00CF239D /* MLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLAppDelegate.m; sourceTree = "<group>"; };
+		B3B590D516F6A01D00CF239D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		B3B590D716F6A01D00CF239D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		B3B590D916F6A01D00CF239D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		B3B590DC16F6A01D00CF239D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		B3B590DE16F6A01D00CF239D /* MLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLViewController.h; sourceTree = "<group>"; };
+		B3B590DF16F6A01D00CF239D /* MLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B3B590BD16F6A01D00CF239D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3B590C416F6A01D00CF239D /* UIKit.framework in Frameworks */,
+				B3B590C616F6A01D00CF239D /* Foundation.framework in Frameworks */,
+				B3B590C816F6A01D00CF239D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B3B590B716F6A01D00CF239D = {
+			isa = PBXGroup;
+			children = (
+				B3B590C916F6A01D00CF239D /* IMGURUploader */,
+				B3B590C216F6A01D00CF239D /* Frameworks */,
+				B3B590C116F6A01D00CF239D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B3B590C116F6A01D00CF239D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B3B590C016F6A01D00CF239D /* IMGURUploader.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B3B590C216F6A01D00CF239D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B3B590C316F6A01D00CF239D /* UIKit.framework */,
+				B3B590C516F6A01D00CF239D /* Foundation.framework */,
+				B3B590C716F6A01D00CF239D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B3B590C916F6A01D00CF239D /* IMGURUploader */ = {
+			isa = PBXGroup;
+			children = (
+				B3B590D216F6A01D00CF239D /* MLAppDelegate.h */,
+				B3B590D316F6A01D00CF239D /* MLAppDelegate.m */,
+				B3B590DB16F6A01D00CF239D /* MainStoryboard.storyboard */,
+				B3B590DE16F6A01D00CF239D /* MLViewController.h */,
+				B3B590DF16F6A01D00CF239D /* MLViewController.m */,
+				B3B590CA16F6A01D00CF239D /* Supporting Files */,
+			);
+			path = IMGURUploader;
+			sourceTree = "<group>";
+		};
+		B3B590CA16F6A01D00CF239D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B3B590CB16F6A01D00CF239D /* IMGURUploader-Info.plist */,
+				B3B590CC16F6A01D00CF239D /* InfoPlist.strings */,
+				B3B590CF16F6A01D00CF239D /* main.m */,
+				B3B590D116F6A01D00CF239D /* IMGURUploader-Prefix.pch */,
+				B3B590D516F6A01D00CF239D /* Default.png */,
+				B3B590D716F6A01D00CF239D /* Default@2x.png */,
+				B3B590D916F6A01D00CF239D /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B3B590BF16F6A01D00CF239D /* IMGURUploader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3B590E316F6A01D00CF239D /* Build configuration list for PBXNativeTarget "IMGURUploader" */;
+			buildPhases = (
+				B3B590BC16F6A01D00CF239D /* Sources */,
+				B3B590BD16F6A01D00CF239D /* Frameworks */,
+				B3B590BE16F6A01D00CF239D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IMGURUploader;
+			productName = IMGURUploader;
+			productReference = B3B590C016F6A01D00CF239D /* IMGURUploader.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B3B590B816F6A01D00CF239D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ML;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Matt Long";
+			};
+			buildConfigurationList = B3B590BB16F6A01D00CF239D /* Build configuration list for PBXProject "IMGURUploader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B3B590B716F6A01D00CF239D;
+			productRefGroup = B3B590C116F6A01D00CF239D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B3B590BF16F6A01D00CF239D /* IMGURUploader */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B3B590BE16F6A01D00CF239D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3B590CE16F6A01D00CF239D /* InfoPlist.strings in Resources */,
+				B3B590D616F6A01D00CF239D /* Default.png in Resources */,
+				B3B590D816F6A01D00CF239D /* Default@2x.png in Resources */,
+				B3B590DA16F6A01D00CF239D /* Default-568h@2x.png in Resources */,
+				B3B590DD16F6A01D00CF239D /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B3B590BC16F6A01D00CF239D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3B590D016F6A01D00CF239D /* main.m in Sources */,
+				B3B590D416F6A01D00CF239D /* MLAppDelegate.m in Sources */,
+				B3B590E016F6A01D00CF239D /* MLViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B3B590CC16F6A01D00CF239D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3B590CD16F6A01D00CF239D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B3B590DB16F6A01D00CF239D /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3B590DC16F6A01D00CF239D /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B3B590E116F6A01D00CF239D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		B3B590E216F6A01D00CF239D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B3B590E416F6A01D00CF239D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IMGURUploader/IMGURUploader-Prefix.pch";
+				INFOPLIST_FILE = "IMGURUploader/IMGURUploader-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B3B590E516F6A01D00CF239D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IMGURUploader/IMGURUploader-Prefix.pch";
+				INFOPLIST_FILE = "IMGURUploader/IMGURUploader-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B3B590BB16F6A01D00CF239D /* Build configuration list for PBXProject "IMGURUploader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3B590E116F6A01D00CF239D /* Debug */,
+				B3B590E216F6A01D00CF239D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3B590E316F6A01D00CF239D /* Build configuration list for PBXNativeTarget "IMGURUploader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3B590E416F6A01D00CF239D /* Debug */,
+				B3B590E516F6A01D00CF239D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B3B590B816F6A01D00CF239D /* Project object */;
+}
