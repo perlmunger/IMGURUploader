@@ -19,6 +19,8 @@ Here is how you use the code. To initiate an upload from a button tap, you would
 
   NSString *title = [[self titleTextField] text];
   NSString *description = [[self descriptionTextField] text];
+
+  [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
   
   __weak MLViewController *weakSelf = self;
   // Load the image data up in the background so we don't block the UI
@@ -29,7 +31,6 @@ Here is how you use the code. To initiate an upload from a button tap, you would
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
     [MLIMGURUploader uploadPhoto:imageData title:title description:description imgurClientID:clientID completionBlock:^(NSString *result) {
       dispatch_async(dispatch_get_main_queue(), ^{
-        [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
         [[weakSelf linkTextView] setText:result];
       });
     } failureBlock:^(NSURLResponse *response, NSError *error, NSInteger status) {
