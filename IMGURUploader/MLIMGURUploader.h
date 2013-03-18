@@ -27,7 +27,6 @@
               title:(NSString*)title
         description:(NSString*)description
       imgurClientID:(NSString*)clientID
-        imgurAPIKey:(NSString*)apiKey
     completionBlock:(void(^)(NSString* result))completion
        failureBlock:(void(^)(NSURLResponse *response, NSError *error, NSInteger status))failureBlock;
 

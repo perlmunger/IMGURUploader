@@ -37,7 +37,6 @@
 - (IBAction)didTapUploadButton:(id)sender
 {
   NSString *clientID = @"YOUR_CLIENT_ID_HERE";
-  NSString *apiKey = @"YOUR_API_KEY_HERE";
 
   NSString *title = [[self titleTextField] text];
   NSString *description = [[self descriptionTextField] text];
@@ -49,7 +48,7 @@
     NSData *imageData = UIImageJPEGRepresentation(image, 1.0f);
     
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
-    [MLIMGURUploader uploadPhoto:imageData title:title description:description imgurClientID:clientID imgurAPIKey:apiKey completionBlock:^(NSString *result) {
+    [MLIMGURUploader uploadPhoto:imageData title:title description:description imgurClientID:clientID completionBlock:^(NSString *result) {
       dispatch_async(dispatch_get_main_queue(), ^{
         [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
         [[weakSelf linkTextView] setText:result];

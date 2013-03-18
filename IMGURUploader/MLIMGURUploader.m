@@ -27,13 +27,11 @@
               title:(NSString*)title
         description:(NSString*)description
       imgurClientID:(NSString*)clientID
-        imgurAPIKey:(NSString*)apiKey
     completionBlock:(void(^)(NSString* result))completion
        failureBlock:(void(^)(NSURLResponse *response, NSError *error, NSInteger status))failureBlock
 {
   NSAssert(imageData, @"Image data is required");
   NSAssert(clientID, @"Client ID is required");
-  NSAssert(apiKey, @"API key is required");
   
   NSString *urlString = @"https://api.imgur.com/3/upload.json";
   NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init] ;
@@ -56,12 +54,6 @@
   
   [requestBody appendData:[@"Content-Type: application/octet-stream\r\n\r\n" dataUsingEncoding:NSUTF8StringEncoding]];
   [requestBody appendData:[NSData dataWithData:imageData]];
-  [requestBody appendData:[@"\r\n" dataUsingEncoding:NSUTF8StringEncoding]];
-  
-  // API Key Parameter
-  [requestBody appendData:[[NSString stringWithFormat:@"--%@\r\n", boundary] dataUsingEncoding:NSUTF8StringEncoding]];
-  [requestBody appendData:[[NSString stringWithFormat:@"Content-Disposition: form-data; name=\"key\"\r\n\r\n"] dataUsingEncoding:NSUTF8StringEncoding]];
-  [requestBody appendData:[apiKey dataUsingEncoding:NSUTF8StringEncoding]];
   [requestBody appendData:[@"\r\n" dataUsingEncoding:NSUTF8StringEncoding]];
   
   // Title parameter

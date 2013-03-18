@@ -16,7 +16,6 @@ Here is how you use the code. To initiate an upload from a button tap, you would
 - (IBAction)didTapUploadButton:(id)sender
 {
   NSString *clientID = @"YOUR_CLIENT_ID_HERE";
-  NSString *apiKey = @"YOUR_API_KEY_HERE";
 
   NSString *title = [[self titleTextField] text];
   NSString *description = [[self descriptionTextField] text];
@@ -28,7 +27,7 @@ Here is how you use the code. To initiate an upload from a button tap, you would
     NSData *imageData = UIImageJPEGRepresentation(image, 1.0f);
     
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
-    [MLIMGURUploader uploadPhoto:imageData title:title description:description imgurClientID:clientID imgurAPIKey:apiKey completionBlock:^(NSString *result) {
+    [MLIMGURUploader uploadPhoto:imageData title:title description:description imgurClientID:clientID completionBlock:^(NSString *result) {
       dispatch_async(dispatch_get_main_queue(), ^{
         [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
         [[weakSelf linkTextView] setText:result];
@@ -45,8 +44,7 @@ Here is how you use the code. To initiate an upload from a button tap, you would
     }];
     
   });
-}
-```
+}```
 
 This code uses no third party libraries, however, it does require ARC and iOS5 or later due to the use of NSURLConnection's [sendAsynchronousRequest:queue:completionHandler:](https://developer.apple.com/library/mac/#documentation/Cocoa/Reference/Foundation/Classes/NSURLConnection_Class/Reference/Reference.html#//apple_ref/occ/clm/NSURLConnection/sendAsynchronousRequest:queue:completionHandler:). The entire uploader functionality is in a single method. It looks like this:
 
@@ -55,13 +53,11 @@ This code uses no third party libraries, however, it does require ARC and iOS5 o
               title:(NSString*)title
         description:(NSString*)description
       imgurClientID:(NSString*)clientID
-        imgurAPIKey:(NSString*)apiKey
     completionBlock:(void(^)(NSString* result))completion
        failureBlock:(void(^)(NSURLResponse *response, NSError *error, NSInteger status))failureBlock
 {
   NSAssert(imageData, @"Image data is required");
   NSAssert(clientID, @"Client ID is required");
-  NSAssert(apiKey, @"API key is required");
   
   NSString *urlString = @"https://api.imgur.com/3/upload.json";
   NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init] ;
@@ -84,12 +80,6 @@ This code uses no third party libraries, however, it does require ARC and iOS5 o
   
   [requestBody appendData:[@"Content-Type: application/octet-stream\r\n\r\n" dataUsingEncoding:NSUTF8StringEncoding]];
   [requestBody appendData:[NSData dataWithData:imageData]];
-  [requestBody appendData:[@"\r\n" dataUsingEncoding:NSUTF8StringEncoding]];
-  
-  // API Key Parameter
-  [requestBody appendData:[[NSString stringWithFormat:@"--%@\r\n", boundary] dataUsingEncoding:NSUTF8StringEncoding]];
-  [requestBody appendData:[[NSString stringWithFormat:@"Content-Disposition: form-data; name=\"key\"\r\n\r\n"] dataUsingEncoding:NSUTF8StringEncoding]];
-  [requestBody appendData:[apiKey dataUsingEncoding:NSUTF8StringEncoding]];
   [requestBody appendData:[@"\r\n" dataUsingEncoding:NSUTF8StringEncoding]];
   
   // Title parameter
